@@ -1,9 +1,0 @@
-{
-  "domain": "em_charging_status",
-  "name": "EM Charging Status",
-  "codeowners": ["@tu_usuario"],
-  "config_flow": true,
-  "documentation": "https://github.com/QuaKim/EM-charging-Status",
-  "iot_class": "cloud_polling",
-  "version": "0.1.0"
-}
