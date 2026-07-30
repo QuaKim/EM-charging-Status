@@ -22,7 +22,7 @@ Diseñada especialmente para propietarios de vehículos eléctricos sin punto de
 
 1. Abre **HACS** en tu instancia de Home Assistant.
 2. Ve al menú superior derecho (tres puntos) y selecciona **Repositorios personalizados**.
-3. Añade la URL de este repositorio: `https://github.com/TU_USUARIO/TU_REPOSITO`
+3. Añade la URL de este repositorio: `https://github.com/QuaKim/EM-charging-Status`
 4. En **Categoría**, selecciona **Integración**.
 5. Haz clic en **Añadir**, busca *Electromaps Public Charging* e instala la integración.
 6. Reinicia Home Assistant.
@@ -30,7 +30,7 @@ Diseñada especialmente para propietarios de vehículos eléctricos sin punto de
 ### Opción 2: Instalación Manual
 
 1. Descarga el código de este repositorio.
-2. Copia la carpeta `custom_components/electromaps` dentro del directorio `custom_components/` de tu configuración de Home Assistant.
+2. Copia la carpeta `custom_components/em_charging_status` dentro del directorio `custom_components/` de tu configuración de Home Assistant.
 3. Reinicia Home Assistant.
 
 ---
