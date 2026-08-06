@@ -1,3 +1,10 @@
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-blue.svg?style=flat-square)](https://github.com/hacs/integration)
+[![GitHub Release](https://img.shields.io/github/v/release/QuaKim/EM-charging-Status?style=flat-square)](https://github.com/QuaKim/EM-charging-Status/releases)
+[![License](https://img.shields.io/github/license/QuaKim/EM-charging-Status?style=flat-square)](https://github.com/QuaKim/EM-charging-Status/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/QuaKim/EM-charging-Status?style=flat-square)](https://github.com/QuaKim/EM-charging-Status/commits/main)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat-square)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-ff5e5b?style=flat-square&logo=ko-fi)](https://ko-fi.com/QuaKim)
+
 # ⚡ Electromaps Public Charger Tracker for Home Assistant
 
 Una integración ligera y eficiente para Home Assistant que te permite monitorizar en tiempo real la disponibilidad, potencia y estado de tus puntos de carga públicos favoritos de **Electromaps**, sin necesidad de abrir la aplicación móvil ni depender de interfaces externas.
