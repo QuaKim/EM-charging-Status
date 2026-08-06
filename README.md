@@ -25,22 +25,52 @@ Diseñada especialmente para propietarios de vehículos eléctricos sin punto de
 
 ## 🛠️ Instalación
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=QuaKim&repository=EM-charging-Status&category=integration)
+
 ### Opción 1: A través de HACS (Recomendado)
 
-1. Abre **HACS** en tu instancia de Home Assistant.
-2. Ve al menú superior derecho (tres puntos) y selecciona **Repositorios personalizados**.
-3. Añade la URL de este repositorio: `https://github.com/QuaKim/EM-charging-Status`
-4. En **Categoría**, selecciona **Integración**.
-5. Haz clic en **Añadir**, busca *Electromaps Public Charging* e instala la integración.
-6. Reinicia Home Assistant.
+1. Abre **HACS** en el menú lateral de Home Assistant.
+2. Haz clic en **Integraciones**.
+3. Pulsa el menú de tres puntos `⋮` (arriba a la derecha) y selecciona **Repositorios personalizados**.
+4. En **URL**, pega la dirección de tu repositorio en GitHub: `https://github.com/QuaKim/EM-charging-Status`
+5. En **Categoría**, selecciona **Integración**.
+6. Haz clic en **Añadir**.
+7. Busca **EM Charging Status** en la lista de HACS y pulsa **Descargar**.
+8. **Reinicia Home Assistant**.
 
 ### Opción 2: Instalación Manual
 
-1. Descarga el código de este repositorio.
-2. Copia la carpeta `custom_components/em_charging_status` dentro del directorio `custom_components/` de tu configuración de Home Assistant.
-3. Reinicia Home Assistant.
+1. Descarga la última versión comprimida desde: https://github.com/QuaKim/evcharge_etecnic/  
+2. Extrae el contenido y copia la carpeta `evcharge` en el directorio `custom_components` de tu servidor de Home Assistant:
+   ```text
+   config/
+   └── custom_components/
+       └── em_charing_status/
+           ├── __init__.py
+           ├── config_flow.py
+           ├── const.py
+           ├── manifest.json
+           ├── sensor.py
+           └── ...
+3. En **Categoría**, selecciona **Integración**.
+4. Haz clic en **Añadir**.
+5. Busca **EM Charging Status** en la lista de HACS y pulsa **Descargar**.
+6. **Reinicia Home Assistant**.
 
----
+##  ⚙️ Pasos para añadir y configurar Puntos de Carga
+
+Una vez instalada la integración y reiniciado Home Assistant, sigue estos pasos para vincular tu cuenta y añadir tus estaciones:
+
+1. Ve a Ajustes → Dispositivos y servicios.
+2. Haz clic en el botón Añadir integración (abajo a la derecha).
+3. Busca EM Charging Status y selecciónala.
+
+Añadir un punto de carga: 
+
+1. Copia el enlace del punto de carga. o escribe su ID de estación, que aparece en la aplicación de Android/iOS, en el campo correspondiente para localizar el punto que deseas vincular.
+2. Pulsa Enviar. La integración conectará con la API de Electromaps para añadir la estación.
+
+El cargador aparecerá registrado como un nuevo Dispositivo, identificado con su Nombre, Calle e ID, e incluirá los sensores de sus tomas (Toma A, Toma B, etc.).
 
 ## 📊 Vista previa en Dashboard
 
@@ -48,3 +78,16 @@ La integración expone cada toma como un sensor individual, permitiendo crear ta
 
 - **Estado directo:** Disponible / Ocupado / Fuera de servicio.
 - **Formato de nombre:** `[Ref/Nombre Conector] ([Potencia] kW)`.
+
+## 🤝 Contribuciones y Soporte
+
+¡Cualquier reporte de errores, ideas o mejoras son bienvenidos!
+Reportar un fallo o sugerencia: Abre un Issue en GitHub.
+Aportar código: Envía una Pull Request.
+
+## ☕ Apoya el proyecto
+Si la integración te resulta útil y quieres apoyar su mantenimiento, ¡puedes invitarme a un café en [Ko-fi](https://ko-fi.com/QuaKim)!
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más información
