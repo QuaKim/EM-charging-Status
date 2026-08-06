@@ -40,8 +40,8 @@ Diseñada especialmente para propietarios de vehículos eléctricos sin punto de
 
 ### Opción 2: Instalación Manual
 
-1. Descarga la última versión comprimida desde: https://github.com/QuaKim/evcharge_etecnic/  
-2. Extrae el contenido y copia la carpeta `evcharge` en el directorio `custom_components` de tu servidor de Home Assistant:
+1. Descarga la última versión comprimida desde: `https://github.com/QuaKim/EM-charging-Status`
+2. Extrae el contenido y copia la carpeta `em_charing_status` en el directorio `custom_components` de tu servidor de Home Assistant:
    ```text
    config/
    └── custom_components/
@@ -70,7 +70,7 @@ Añadir un punto de carga:
 1. Copia el enlace del punto de carga. o escribe su ID de estación, que aparece en la aplicación de Android/iOS, en el campo correspondiente para localizar el punto que deseas vincular.
 2. Pulsa Enviar. La integración conectará con la API de Electromaps para añadir la estación.
 
-El cargador aparecerá registrado como un nuevo Dispositivo, identificado con su Nombre, Calle e ID, e incluirá los sensores de sus tomas (Toma A, Toma B, etc.).
+El cargador aparecerá registrado como un nuevo Dispositivo, identificado con su Nombre, Calle e ID, e incluirá los sensores de sus tomas.
 
 ## 📊 Vista previa en Dashboard
 
